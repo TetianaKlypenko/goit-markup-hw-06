@@ -37,3 +37,37 @@
     line-height: 1.5;
     letter-spacing: 0.32px;
 }
+
+@media (min-width: 320px){
+    .list-features{
+        max-width: 320px;
+        flex-direction: column;
+        gap: 72px;
+        padding-right: 16px;
+        padding-left: 16px;
+        margin: 0 auto;
+    }
+    .decoration{
+        display: none;
+    }
+    .feature-name{
+        font-weight: 700;
+        font-size: 36px;        
+        letter-spacing: 0.02em;
+        margin-top: 0;
+        text-align: center;
+    }
+}
+@media (min-width: 768px) {
+    .list-features {
+        max-width: 768px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .item-f {
+        width: calc((100% - 24px)/2);
+    }
+}

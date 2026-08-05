@@ -156,3 +156,63 @@
 .footer-button:focus{
     background-color: #31D0AA;
 }
+
+@media (min-width: 320px) and (max-width:767px){
+    .footer{
+        max-width: 320px;
+        padding-top: 96px;
+        padding-bottom: 96px;
+        margin: 0 auto;
+    }
+    .container.footer{
+        flex-direction: column;
+        padding-left: 16px;
+        padding-right: 16px;
+        gap: 72px;
+    }
+    .logo-text{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .logo.footer{
+        justify-content: center;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .list-social{
+        margin: 0 auto;
+        align-items: center;
+    }
+    .title-social{
+        text-align: center;
+    }
+    .socials-f{
+        margin: 0 auto;
+        margin-top: 16px;
+    }
+    .subscribe{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .title-sub{
+        text-align: center;
+    }
+    .footer-form{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }        
+}
+@media (min-width: 768px) {
+    .container.footer{
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 96px;
+        padding-bottom: 96px;
+        margin: 0 auto;
+    }
+}

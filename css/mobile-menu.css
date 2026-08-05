@@ -1,0 +1,119 @@
+.mobile-menu{
+    max-width: 320px;
+    background-color: #FFFFFF;
+    padding-top: 72px;
+    padding-right: 16px;
+    padding-bottom: 40px;
+    padding-left: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu.is-open{
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.sign-close-menu {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    background-color: rgba(231, 233, 252, 1);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 24px;
+}
+
+.sign-close:hover,
+.sign-close:focus {
+    background-color: #404BBF;
+    border-color: #404BBF;
+}
+
+.sign-close:hover .close,
+.sign-close:focus .close {
+    color: #FFFFFF;
+    fill: #FFFFFF;
+}
+
+.close {
+    color: rgba(46, 47, 66, 1);
+    fill: rgba(46, 47, 66, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 168px;
+}
+
+.nav-menu a{
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: rgba(46, 47, 66, 1);
+}
+
+.is-active{
+    color: rgba(64, 75, 191, 1);
+}
+
+.contacts-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.link-m{
+    font-size: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: rgba(67, 68, 85, 1);
+}
+
+.socials-menu {
+    list-style: none;
+    display: flex;
+    width: 288px;
+    height: 40px;
+    gap: 24px;
+}
+
+.m{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #4D5AE5;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.m:hover{
+    background-color: #404BBF;
+}
+
+.icon-m {
+    fill: #f4f4fd;
+    color: #f4f4fd;
+}

@@ -73,3 +73,42 @@
     line-height: 1.5;
     letter-spacing: 0.32px;
 }
+
+@media (min-width: 320px) {
+    .portfolio.section{
+        max-width: 320px;
+        padding-top: 96px;
+        padding-bottom: 96px;
+        margin: 0 auto;
+    }
+    .list-portfolio{
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
+    }
+    .gallery-item{
+        margin: 0 auto;
+    }
+    .photo-p{
+        width: 288px;
+    }
+    .card-p{
+        width: 288px;
+    }
+}
+@media (min-width: 768px) {
+    .container.portfolio {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .list-portfolio {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    .gallery-item{
+        margin: 0;
+    }
+
+}
