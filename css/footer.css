@@ -206,13 +206,31 @@
         align-items: center;
     }        
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1158px){
     .container.footer{
         max-width: 768px;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 96px;
-        padding-bottom: 96px;
+        padding-right: 164px;
+        padding-left: 108px;
         margin: 0 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
     }
+    .logo-text{
+        width: 264px;
+        padding-bottom: 72px;
+    }
+
+    .list-social{
+        width: 208px;
+        margin-left: 24px;
+        padding-bottom: 104px;
+    }
+    .subscribe{
+        justify-content: start;
+        margin-left: 0px;
+    }
+
 }

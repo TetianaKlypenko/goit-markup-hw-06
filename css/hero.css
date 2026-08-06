@@ -11,7 +11,7 @@
         url(../images/hero-bg@2x.jpg) 2x);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: auto;
     padding-top: 188px;
     padding-bottom: 188px;
     padding-left: 141px;
@@ -65,6 +65,7 @@
         padding-right: 52px;
         padding-left: 52px;
         margin: 0 auto;
+        background-size: cover;
     }
     .hero-title{
         width: 216px;
@@ -88,4 +89,13 @@
         line-height: 1.07;
         margin-bottom: 36px;
     }
+}
+@media (min-width: 1158px){
+    .hero {
+            max-width: 1158px;
+            padding-top: 188px;
+            padding-bottom: 188px;
+            padding-right: 141px;
+            padding-left: 141px;
+        }
 }
