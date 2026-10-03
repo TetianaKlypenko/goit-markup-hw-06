@@ -1,39 +1,45 @@
-.container.portfolio{
+.container.portfolio {
     display: block;
     justify-content: center;
+    max-width: 320px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    margin: 0 auto;
 }
 
-.list-portfolio{
+.list-portfolio {
     display: flex;
     margin-top: 72px;
-    flex-wrap: wrap;
-    gap: 24px;
-    row-gap: 48px;
+    flex-direction: column;
+    gap: 72px;
 }
 
-.photo-p{
+.photo-p {
     display: block;
+    width: 288px;
 }
 
-.gallery-item{
+.gallery-item {
     position: relative;
     overflow: hidden;
+    margin: 0 auto;
 }
 
-.card-p{
+.card-p {
+    width: 288px;
     border-right: 1px solid #E7E9FC;
     border-bottom: 1px solid #E7E9FC;
     border-left: 1px solid #E7E9FC;
     padding: 32px 16px 32px 16px;
 }
 
-.overlay{
-    display:block;
+.overlay {
+    display: block;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; 
+    width: 100%;
     transform: translateY(200%);
     background-color: #4D5AE5;
     color: #F4F4FD;
@@ -47,20 +53,20 @@
     padding-bottom: 40px;
 }
 
-.portfolio-item{
+.portfolio-item {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item:hover{
+.portfolio-item:hover {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-item:hover .overlay{
+.portfolio-item:hover .overlay {
     transform: translateY(0);
 }
-   
 
-.decision{
+
+.decision {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -68,45 +74,24 @@
     margin-bottom: 8px;
 }
 
-.info{
+.info {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
 }
 
-@media (min-width: 320px) and (max-width: 1158px) {
-    .portfolio.section{
-        max-width: 320px;
-        padding-top: 96px;
-        padding-bottom: 96px;
-        margin: 0 auto;
-    }
-    .list-portfolio{
-        display: flex;
-        flex-direction: column;
-        gap: 72px;
-    }
-    .gallery-item{
-        margin: 0 auto;
-    }
-    .photo-p{
-        width: 288px;
-    }
-    .card-p{
-        width: 288px;
-    }
-}
-@media (min-width: 768px) and (max-width: 1158px) {
+@media (min-width: 768px){
     .portfolio.section {
         max-width: 768px;
         justify-content: center;
     }
+    
     .container.portfolio {
         max-width: 768px;
         margin: 0 auto;
         justify-content: center;
     }
-
+    
     .list-portfolio {
         flex-direction: row;
         flex-wrap: wrap;
@@ -115,11 +100,13 @@
         margin-top: 72px;
         justify-content: center;
     }
-    .gallery-item{
+    
+    .gallery-item {
         margin: 0;
     }
 }
-@media (min-width: 1158px){
+
+@media (min-width: 1158px) {
     .portfolio.section {
         max-width: 1158px;
         margin: 0 auto;

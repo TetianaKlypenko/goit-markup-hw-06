@@ -1,7 +1,9 @@
 .footer{
     background-color: #2E2F42;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    max-width: 320px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    margin: 0 auto;
 }
 
 .container.footer{
@@ -9,33 +11,48 @@
     align-items: start;
     padding-top: 0%;
     padding-bottom: 0%;
+    flex-direction: column;
+    margin: 0 auto;
 }
 
 .logo.footer {
     color: #F4F4FD;
     margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+    padding-top: 0;
 }
 .accent{
     color: #4D5AE5;
 }
 
-.list-social{
-    margin-left: 120px;
+.slogan{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
 }
 
-.footer p{
-    font-size: 16px;
-    color: #F4F4FD;
-    letter-spacing: 0.32px;
-    line-height: 1.5;
-    width: 264px;
+.logo-text{
+    margin-bottom: 72px;
+}
+
+.list-social {
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 72px;
 }
 
 .title-social{
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 500;
-    letter-spacing: 0.02em
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 16px;
 }
 
 .socials-f{
@@ -45,7 +62,7 @@
     height: 40px;
     gap: 16px;
     justify-content: center;
-    margin-top: 16px;
+    margin: 0 auto;
 }
 .s-f{
     display: flex;
@@ -72,7 +89,9 @@
 }
 
 .subscribe{
-    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
 }
 
 .title-sub{
@@ -83,12 +102,15 @@
     letter-spacing: 0.02em;
     line-height: 1.5;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 .footer-form{
     display: flex;
     gap: 24px;
-    align-items: end;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
 }
 
 .footer-email{
@@ -157,80 +179,75 @@
     background-color: #31D0AA;
 }
 
-@media (min-width: 320px) and (max-width:767px){
+@media (min-width: 768px){
     .footer{
-        max-width: 320px;
-        padding-top: 96px;
-        padding-bottom: 96px;
-        margin: 0 auto;
-    }
-    .container.footer{
-        flex-direction: column;
-        padding-left: 16px;
-        padding-right: 16px;
-        gap: 72px;
-    }
-    .logo-text{
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-    .logo.footer{
-        justify-content: center;
-        padding-bottom: 0;
-        padding-top: 0;
-    }
-    .list-social{
-        margin: 0 auto;
-        align-items: center;
-    }
-    .title-social{
-        text-align: center;
-    }
-    .socials-f{
-        margin: 0 auto;
-        margin-top: 16px;
-    }
-    .subscribe{
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-    .title-sub{
-        text-align: center;
-    }
-    .footer-form{
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        align-items: center;
-    }        
-}
-@media (min-width: 768px) and (max-width: 1158px){
-    .container.footer{
         max-width: 768px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
+    }
+
+    .container.footer {
+        max-width: 768px;
         padding-right: 164px;
         padding-left: 108px;
         margin: 0 auto;
         flex-direction: row;
         flex-wrap: wrap;
-        
     }
-    .logo-text{
+
+    .logo-text {
         width: 264px;
-        padding-bottom: 72px;
+        margin-bottom: 72px;
+        margin-right: 24px;
+    }
+
+    .list-social {
+        width: 208px;
+        padding-bottom: 0;
+    }
+
+    .title-social{
+        text-align: left;
+    }
+
+    .subscribe {
+        width: 453px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .title-sub{
+        margin-bottom: 16px;
+        margin-right: 378px;
+    }
+    .footer-form{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media (min-width: 1158px) {
+    .footer {
+        max-width: 1440px;
+        background-color: #2E2F42;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .container.footer{
+        max-width: 1158px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin: 0 auto;
+    }
+
+    .logo-text{
+        margin-right: 120px;
+        margin-bottom: 0;
     }
 
     .list-social{
-        width: 208px;
-        margin-left: 24px;
-        padding-bottom: 104px;
+        margin-right: 83px;
+        margin-bottom: 0;
     }
-    .subscribe{
-        justify-content: start;
-        margin-left: 0px;
-    }
+
+
 
 }

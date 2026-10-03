@@ -3,62 +3,36 @@
     justify-content: center;
 }
 
-.list-features{
+.list-features {
     display: flex;
-    gap: 24px;
+    max-width: 320px;
+    flex-direction: column;
+    gap: 72px;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin: 0 auto;
 }
 
 .feature-name{
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 36px;
     line-height: 1.2;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.02em;
     color: #2E2F42;
     margin-bottom: 8px;
-    margin-top: 8px;
 }
  .item-f{
     width: 264px;
- }
+}
 
  .decoration{
-    display: flex;
-    width: 264px;
-    height: 112px;
-    background-color: #F4F4FD;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
-    justify-content: center;
-    align-items: center;
- }
+    display: none;
+}
 
 .description{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
-}
-@media (min-width: 320px) and (max-width:1158px){
-    .decoration{
-        display: none;
-    }
-    .feature-name{
-        font-weight: 700;
-        font-size: 36px;        
-        letter-spacing: 0.02em;
-        margin-top: 0;
-        text-align: center;
-    }
-}
-
-@media (min-width: 320px){
-    .list-features{
-        max-width: 320px;
-        flex-direction: column;
-        gap: 72px;
-        padding-right: 16px;
-        padding-left: 16px;
-        margin: 0 auto;
-    }    
 }
 
 @media (min-width: 768px) {
@@ -69,18 +43,41 @@
         gap: 24px;
         justify-content: center;
     }
+
     .item-f {
         width: calc((100% - 24px)/2);
     }
 }
 
-@media (min-width: 1158px){
-    .list-features{
+@media (min-width: 1158px) {
+    .list-features {
         max-width: 1158px;
         padding-right: 0;
         padding-left: 0;
     }
+
     .item-f {
         width: 264px;
+    }
+
+    .decoration {
+        display: flex;
+        width: 264px;
+        height: 112px;
+        background-color: #F4F4FD;
+        border: 1px solid #8E8F99;
+        border-radius: 4px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feature-name {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2E2F42;
+        margin-bottom: 8px;
+        margin-top: 8px;
     }
 }
