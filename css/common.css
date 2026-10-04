@@ -78,7 +78,7 @@ ul{
 
 .container {
     width: 100%;
-    max-width: 320px;
+    max-width: 352px;
     box-sizing: content-box;
     margin: 0 auto;
     padding-left: 16px;
@@ -88,8 +88,7 @@ ul{
 @media (min-width: 768px) {
     .container{
         width: 100%;
-        max-width: 768px;
-        box-sizing: content-box;
+        max-width: 800x;
         margin: 0 auto;
         padding-left: 16px;
         padding-right: 16px;
