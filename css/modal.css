@@ -1,8 +1,11 @@
 .modal-overlay {
     display: flex;
     flex-direction: column;
-    max-width: 320px;
-    padding: 72px 24px;
+    max-width: 288px;
+    padding-top: 72px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
     border-radius: 4px;
     background-color: #FCFCFC;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -283,9 +286,10 @@
     visibility: visible;
 }
 @media (min-width: 768px) {
-
     .modal-overlay {
         max-width: 408px;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 
     .form-text {

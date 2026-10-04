@@ -1,4 +1,4 @@
-.team{
+.section{
     background-color: #F4F4FD;
     padding-top: 96px;
     padding-bottom: 96px;
@@ -94,13 +94,18 @@
     .list-participants {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 72px 24px;
+        gap: 64px 24px;
         justify-content: center;
     }
 }
 
 @media (min-width: 1158px) {
+    .section{
+        padding-bottom: 120px;
+        padding-top: 120px;
+    }
+
     .container.team {
-        max-width: 1158px;
+        max-width: 1128px;
     }
 }

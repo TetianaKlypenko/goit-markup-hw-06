@@ -13,6 +13,7 @@
     padding-bottom: 0%;
     flex-direction: column;
     margin: 0 auto;
+    max-width: 288px;
 }
 
 .logo.footer {
@@ -107,7 +108,7 @@
 
 .footer-form{
     display: flex;
-    gap: 24px;
+    gap: 16px;
     flex-direction: column;
     margin: 0 auto;
     align-items: center;
@@ -119,7 +120,7 @@
     padding-left: 16px;
     padding-right: 16px;
     background-color: inherit;
-    width: 264px;
+    width: 288px;
     height: 40px;
     border-radius: 4px;
     border: 1px solid #FFFFFF;
@@ -186,10 +187,11 @@
     }
 
     .container.footer {
-        max-width: 768px;
+        max-width: 736px;
         padding-right: 164px;
         padding-left: 108px;
         margin: 0 auto;
+        justify-content: left;
         flex-direction: row;
         flex-wrap: wrap;
     }
@@ -203,6 +205,7 @@
     .list-social {
         width: 208px;
         padding-bottom: 0;
+        margin: 0;
     }
 
     .title-social{
@@ -213,6 +216,7 @@
         width: 453px;
         flex-direction: row;
         flex-wrap: wrap;
+        margin: 0;
     }
     .title-sub{
         margin-bottom: 16px;
@@ -247,7 +251,4 @@
         margin-right: 83px;
         margin-bottom: 0;
     }
-
-
-
 }

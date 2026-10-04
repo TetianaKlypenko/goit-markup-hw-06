@@ -1,9 +1,11 @@
+.section{
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
 .container.portfolio {
     display: block;
     justify-content: center;
     max-width: 320px;
-    padding-top: 96px;
-    padding-bottom: 96px;
     margin: 0 auto;
 }
 
@@ -11,7 +13,7 @@
     display: flex;
     margin-top: 72px;
     flex-direction: column;
-    gap: 72px;
+    gap: 48px;
 }
 
 .photo-p {
@@ -82,7 +84,6 @@
 
 @media (min-width: 768px){
     .portfolio.section {
-        max-width: 768px;
         justify-content: center;
     }
     
@@ -95,9 +96,8 @@
     .list-portfolio {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px;
+        gap: 72px 24px;
         margin: 0 auto;
-        margin-top: 72px;
         justify-content: center;
     }
     
@@ -111,11 +111,17 @@
         max-width: 1158px;
         margin: 0 auto;
         justify-content: center;
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
         
     .container.portfolio {
         max-width: 1158px;
         margin: 0 auto;
         justify-content: center;
+    }
+
+    .list-portfolio {
+        gap: 48px 24px;
     }
 }
