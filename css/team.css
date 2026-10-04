@@ -106,6 +106,7 @@
     }
 
     .container.team {
-        max-width: 1128px;
+        box-sizing: border-box;
+        max-width: 1158px;
     }
 }

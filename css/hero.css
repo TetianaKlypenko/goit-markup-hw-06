@@ -68,12 +68,15 @@
     .container {
         max-width: 768px;
         margin: 0 auto;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .hero-title {
         width: 496px;
         font-size: 56px;
         line-height: 1.07;
+        margin-bottom: 36px;
     }
 }
 @media (min-width: 1158px){
@@ -88,6 +91,8 @@
     .container{
         max-width: 1158px;
         margin: 0 auto;
+        padding-bottom: 0;
+        padding-top: 0;
     }
     
     .hero-title {
