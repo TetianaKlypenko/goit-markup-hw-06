@@ -56,26 +56,36 @@
     background-color: #404bbf;
 }
 @media (min-width: 768px){
-    .hero {
+    .hero{
+        max-width: 1140px;
+    }
+
+    .container {
         max-width: 768px;
         padding-top: 112px;
         padding-bottom: 112px;
         padding-right: 136px;
         padding-left: 136px;
+        margin: 0 auto;
     }
     .hero-title {
         width: 496px;
         font-size: 56px;
         line-height: 1.07;
-        margin-bottom: 36px;
+        margin-bottom: 48px;
     }
 }
 @media (min-width: 1158px){
-    .hero {
-            max-width: 1158px;
-            padding-top: 188px;
-            padding-bottom: 188px;
-            padding-right: 141px;
-            padding-left: 141px;
-        }
+    .hero{
+        max-width: 1440px;
+    }
+    
+    .container{
+        max-width: 1158px;
+        padding-top: 188px;
+        padding-bottom: 188px;
+        padding-right: 141px;
+        padding-left: 141px;
+        margin: 0 auto;
+    }
 }

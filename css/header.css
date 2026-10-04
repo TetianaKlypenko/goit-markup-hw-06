@@ -7,16 +7,25 @@
     max-width: 320px;
     padding-left: 16px;
     padding-right: 16px;
-    padding-bottom: 16px;
-    padding-top: 16px;
     margin-left: auto;
     margin-right: auto;
+    justify-content: space-between;
+}
+
+.navigation{
+    display: none;
+}
+
+.address{
+    display: none;
 }
 
 .logo.header{
     color: #2E2F42;
-    margin-right: 149px;
-    padding: 0;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    padding-left: 0;
+    padding-right: 0;
     border-bottom: 0;
 }
 .accent{
@@ -103,16 +112,23 @@
         display: none;
     }
 
+    .burger-button {
+        display: none;
+    }
+
     .logo.header {
         margin-top: 24px;
         margin-bottom: 24px;
         margin-left: 16px;
         margin-right: 120px;
     }
+    
+    .navigation, .address{
+        display: flex;
+    }
 
     .menu-link {
         display: flex;
-        margin-right: 129px;
         gap: 40px;
     }
 
@@ -120,9 +136,9 @@
         display: flex;
         flex-direction: column;
         gap: 12px;
-        padding-top: 16px;
-        padding-bottom: 16px;
         margin-right: 16px;
+        margin-left: auto;
+        font-style: normal;
     }
 
     .contacts a {

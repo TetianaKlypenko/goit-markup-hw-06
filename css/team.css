@@ -94,7 +94,7 @@
     .list-participants {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 24px;
+        gap: 72px 24px;
         justify-content: center;
     }
 }
