@@ -77,18 +77,22 @@ ul{
 }
 
 .container {
+    width: 100%;
     max-width: 320px;
+    box-sizing: content-box;
     margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 @media (min-width: 768px) {
     .container{
-    max-width: 768px;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
+        width: 100%;
+        max-width: 768px;
+        box-sizing: content-box;
+        margin: 0 auto;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
 
