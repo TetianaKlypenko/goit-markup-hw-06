@@ -175,11 +175,11 @@
 
     .logo.header {
         margin-right: 76px;
+        margin-left: 0;
     }
 
     .menu-link {
         align-items: center;
-        margin-right: 340px;
     }
 
     .contacts {
@@ -190,6 +190,7 @@
         font-size: 16px;
         letter-spacing: 0.32px;
         font-style: normal;
+        margin-right: 0;
     }
     
     .contacts a {
